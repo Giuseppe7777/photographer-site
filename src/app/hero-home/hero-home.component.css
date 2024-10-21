@@ -1,15 +1,16 @@
 .hero-container {
     position: relative;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    container-type: inline-size; /*if anyone is reading this, this is neccessary for the container queries*/
 }
 
 
 .hero-bg {
-    background-image: url('/public/images/hero/hero01.jpg');
+    background-image: url('/images/hero/hero01.jpg');
     background-attachment: fixed; 
     background-position: center;
     background-size: cover;
@@ -26,9 +27,34 @@
 .hero-text {
     text-align: center;
     color: var(--text-color);
-    opacity: 0.5;
-    /*background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px;
-    border-radius: 8px;*/
+    opacity: 0.8;
 }
-  
+
+/** container queries START**/
+
+@container (min-inline-size: 800px) { 
+    .hero-container {
+        height: 30vh;
+    }
+    .hero-text {
+        text-align: center;
+        color: red;
+        opacity: 0.8;
+    }
+}
+
+
+@container (min-width: 500px) { 
+    .hero-container {
+        height: 20vh;
+    }
+    .hero-text {
+        text-align: center;
+        color: green;
+        opacity: 0.8;
+    }
+
+}
+
+
+/** container queries END**/

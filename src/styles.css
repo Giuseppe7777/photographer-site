@@ -7,7 +7,6 @@
     --secondary-color: #00ABAD;
     --tertiary-color-light: #ffcc80  ;
     --tertiary-color: #ef6c00  ;
-    
 
     --white: #ffffff;
     --black: #000000;
@@ -20,7 +19,7 @@
     
     --background-color: var(--primary-color-dark);
 
-    --shadow-color: ;
+    --navbar-bg: linear-gradient(0deg, rgba(0,5,5,0) 0%, rgba(0,5,5,1) 100%);
 
 
 }
@@ -36,10 +35,19 @@
     }
 /* Fonts END*/
 body {
-    padding: 2rem;
     background-color: var(--background-color);
 }
 
+body div {
+    padding: 2rem;
+}
 
 
 /** GENERAL END **/
+
+/** NAVBAR START **/
+ .navbar {
+    background: var(--navbar-bg);
+ }
+
+/** NAVBAR END **/
