@@ -16,7 +16,7 @@ const routes: Routes = [
   },
   {
     path: 'bio',
-  }
+  },
   {
     path: 'contact',
     component: ContactComponent
