@@ -26,16 +26,24 @@
 /* Colors END */
 
 /* Fonts START */
-    h1 {
-        color: var(--title-color)
-    }
 
-    p {
-        color: var(--text-color);
-    }
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--title-color)
+}
+
+p,
+li {
+    color: var(--text-color);
+}
+
 /* Fonts END*/
 body {
     background-color: var(--background-color);
+    font-family:  "Work Sans", sans-serif;
 }
 
 body div {

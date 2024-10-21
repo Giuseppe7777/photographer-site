@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    container-type: inline-size; /*if anyone is reading this, this is neccessary for the container queries*/
 }
 
 
@@ -30,31 +29,32 @@
     opacity: 0.8;
 }
 
-/** container queries START**/
+.hero-text h1 {
+    text-transform: uppercase;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 900;
+    font-size: calc(1.375rem + 3.5vw);   
+    
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Damit der Text selbst die Gradientenfarbe nimmt */
+}
 
-@container (min-inline-size: 800px) { 
+/** media queries START**/
+
+@media (max-width: 800px) { 
     .hero-container {
-        height: 30vh;
-    }
-    .hero-text {
-        text-align: center;
-        color: red;
-        opacity: 0.8;
+        height: 40vh; /*why does this not work?*/
     }
 }
 
 
-@container (min-width: 500px) { 
+@media (max-width: 500px) { 
     .hero-container {
         height: 20vh;
     }
-    .hero-text {
-        text-align: center;
-        color: green;
-        opacity: 0.8;
-    }
 
 }
 
-
-/** container queries END**/
+/** media queries END**/
