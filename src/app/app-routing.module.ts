@@ -3,12 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { DetailsComponent } from './details/details.component';
 import { BioComponent } from './bio/bio.component';
 
 const routes: Routes = [
   {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
     path: '',
-    component: HomeComponent,
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
@@ -22,6 +27,9 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },{
+    path:"details/:catagory", 
+    component : DetailsComponent
   }
 ];
 
