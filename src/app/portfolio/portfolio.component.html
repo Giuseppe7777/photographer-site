@@ -20,10 +20,9 @@
         </div>
     </div>
 </div> -->
-<div class="bg-secondary-subtle">
+<div class="bg-dark">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-3">
         <div *ngFor="let item of array | keyvalue">
-          <!-- <div  *ngIf="item.cardDisp==true"> -->
             <div class="card mx-auto mb-2">
                 <div class="card-header">
                     {{item.key}}
@@ -35,7 +34,6 @@
                     <a routerLink="/details/{{item.key}}" class="btn btn-lg btn-outline-success">Details</a>
                   </div>
                 </div>
-            <!-- </div> -->
             </div>
         </div>
     </div>
