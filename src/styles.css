@@ -1,11 +1,45 @@
 /** GENERAL START **/
 /* Colors START */
 :root {
-    --primary-color: ;
+    --primary-color-dark: #000505 ;
+    --primary-color-light: #f5f5f5 ;
+    --secondary-color-light:  #aaeff0   ;
+    --secondary-color: #00ABAD;
+    --tertiary-color-light: #ffcc80  ;
+    --tertiary-color: #ef6c00  ;
+    
+
+    --white: #ffffff;
+    --black: #000000;
+    --grey-light: #c0c0c0;
+    --grey-mid: #808080;
+    --grey-dark: #4d4d4d;
+
+    --title-color: var(--secondary-color-light);
+    --text-color: var(--primary-color-light);
+    
+    --background-color: var(--primary-color-dark);
+
+    --shadow-color: ;
+
+
 }
 /* Colors END */
 
 /* Fonts START */
-/* Fonts END*/
+    h1 {
+        color: var(--title-color)
+    }
 
-/** GENERAL START **/
+    p {
+        color: var(--text-color);
+    }
+/* Fonts END*/
+body {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+
+
+
+/** GENERAL END **/
