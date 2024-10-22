@@ -8,12 +8,12 @@ import { product } from '../shared/products';
   styleUrl: './details.component.css'
 })
 export class DetailsComponent {
-  catagory : any;
+  category : any;
   array : any = [];
 
   constructor(private route:ActivatedRoute){
-    this.catagory = this.route.snapshot.params["catagory"];
-    this.array = product.filter(item=>item.categoryName == this.catagory)
+    this.category = this.route.snapshot.params["catagory"];
+    this.array = product.filter(item=>item.categoryName == this.category)
     console.log(this.array);
     
   }
