@@ -41,6 +41,7 @@ a {
 }
 
 /* Fonts END*/
+
 body {
     background-color: var(--background-color);
     font-family:  "Work Sans", sans-serif;
@@ -53,9 +54,41 @@ body div:first-child {
 
 /** GENERAL END **/
 
+/** ANIMATION START **/
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/** ANIMATION END **/
+
 /** NAVBAR START **/
  .navbar {
     background: var(--navbar-bg);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+ }
+
+ .navbar-nav .nav-link.active,
+ .nav-link:focus{
+    color: var(--secondary-color);
+ }
+
+ .nav-link {
+    color: var(--text-color);
+ }
+
+ .nav-link:hover {
+    color: var(--secondary-color-light);
  }
 
 /** NAVBAR END **/
