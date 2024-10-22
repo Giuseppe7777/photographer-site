@@ -76,6 +76,7 @@ body div:first-child {
     position: fixed;
     z-index: 9999;
     width: 100%;
+    font-weight: 500;
  }
 
  .navbar-nav .nav-link.active,
