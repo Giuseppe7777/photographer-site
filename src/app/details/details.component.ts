@@ -12,9 +12,8 @@ export class DetailsComponent {
   array : any = [];
 
   constructor(private route:ActivatedRoute){
-    this.category = this.route.snapshot.params["catagory"];
+    this.category = this.route.snapshot.params["category"];
     this.array = product.filter(item=>item.categoryName == this.category)
     console.log(this.array);
-    
   }
 }

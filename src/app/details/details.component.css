@@ -1,0 +1,29 @@
+.container {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    /* max-width: 80rem;
+    max-height: 80rem; */
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+  
+.wrapper {
+    display: flex;
+    animation: roll 20s linear infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+@keyframes roll {
+    to {
+      transform: translate(calc(-4 * 15rem));
+    }
+}
