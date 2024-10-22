@@ -29,7 +29,7 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
-    path:"details/:catagory", 
+    path:"details/:category", 
     component : DetailsComponent
   }
 ];
