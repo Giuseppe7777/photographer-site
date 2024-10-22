@@ -36,7 +36,8 @@ h5 {
 }
 
 p,
-li {
+li,
+a {
     color: var(--text-color);
 }
 
