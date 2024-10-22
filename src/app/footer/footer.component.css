@@ -1,0 +1,13 @@
+.footer_links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content:center;
+}
+li {
+    padding: 0.5rem;
+}
+
+ul.footer_links {
+    padding: 0;
+}

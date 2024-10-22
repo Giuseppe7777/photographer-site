@@ -19,8 +19,9 @@
     
     --background-color: var(--primary-color-dark);
 
-    --navbar-bg: linear-gradient(0deg, rgba(0,5,5,0) 0%, rgba(0,5,5,1) 100%);
+    --navbar-bg: linear-gradient(0deg, rgba(0,5,5,0) 0%, rgba(0,5,5,0.5) 40%, rgba(0,5,5,1) 100%);
 
+    --transition-nav-link: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), text-shadow 0.4s ease-out, color 0.4s ease-out;
 
 }
 /* Colors END */
@@ -42,21 +43,75 @@ a {
 }
 
 /* Fonts END*/
+
 body {
     background-color: var(--background-color);
     font-family:  "Work Sans", sans-serif;
 }
 
-body div {
+body div:first-child {
     padding: 2rem;
 }
 
 
 /** GENERAL END **/
 
+/** ANIMATION START **/
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/** ANIMATION END **/
+
 /** NAVBAR START **/
  .navbar {
     background: var(--navbar-bg);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    font-weight: 500;
  }
+
+.navbar-nav .nav-link.active,
+.nav-link:focus {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+    transition: var(--transition-nav-link);
+    text-shadow: 0px 1px 14px var(--secondary-color-light);
+}
+
+ .nav-link {
+    color: var(--text-color);
+ }
+
+ .nav-link:hover {
+    color: var(--secondary-color-light);
+    transform: scale(1.1);
+    transition: var(--transition-nav-link);
+ }
+
+ .logo-svg {
+    width: 100%;
+    height: auto;
+    max-width: 200px; 
+  }
+  
+  .navbar-brand {
+    display: inline-block;
+    width: auto;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
 
 /** NAVBAR END **/
