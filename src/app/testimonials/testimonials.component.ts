@@ -12,19 +12,18 @@ export class TestimonialsComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     $("#testimonial-slider").owlCarousel({
       items: 3, 
-      margin: 10,
       loop: true,
-      autoplay: true,
-      autoplayTimeout: 3000,
+      margin: 10,
+      center: true, 
       responsive: {
         0: {
           items: 1 
         },
         600: {
-          items: 2
+          items: 3 
         },
         1000: {
-          items: 3
+          items: 5
         }
       }
     });
