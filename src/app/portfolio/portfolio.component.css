@@ -16,7 +16,6 @@
 
 .card1 .overlay {
     position: absolute; 
-    /* bottom: 0;  */
     top: 30%;
     left: 0;
     right: 0;
@@ -37,13 +36,3 @@
     background-color: none;
     color: #FFD700;
   }
-/* 
-.btnDetail {
-    background-color: #E58E00; 
-    color: whitesmoke;
-}  */
-
-.btnDetail > a {
-    text-decoration: none;
-    color: whitesmoke;
-}
