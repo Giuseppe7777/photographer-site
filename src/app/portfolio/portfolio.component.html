@@ -1,39 +1,13 @@
-<!-- <div class="container-fluid">
-    <div class="row row-cols-lg-3 p-5"></div>
-        <div *ngFor="let item of products; let i = index"> -->
-            <!-- <div *ngIf="item.cardDisp==true">
-                <div class="card mx-auto m-3">
-                    <div class="card-header">
-                        {{item.categoryName}}
-                    </div>
-                    <img [src]="item.img" class="card-img-top mx-auto mt-3 card-img" alt="this is an image">
-                    <div class="card-body">
-                      <h5 class="card-title">{{item.categoryName}}</h5>
-                      <p class="card-text text-uppercase fw-bold">{{item.productName}}</p>
-                      <div class="d-flex justify-content-around">
-                        <button class="btn btnDetail btn-lg" routerLink="/details/{{i}}">
-                            <a routerLink="/details/{{i}}">Details</a> 
-                        </button>
-                    </div>
-                </div>
-            </div>      
-        </div>
-    </div>
-</div> -->
-<div class="bg-dark">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-3">
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-2">
         <div *ngFor="let item of array | keyvalue">
-            <div class="card mx-auto mb-2">
-                <div class="card-header">
-                    {{item.key}}
-                </div>
-                <img [src]="item.value" class="card-img-top mx-auto mt-3 card-img" alt="this is an image">
-                <div class="card-body">
-                  <h5 class="card-title text-uppercase fw-bold"></h5>
-                  <div class="d-flex justify-content-around">
-                    <a routerLink="/details/{{item.key}}" class="btn btn-lg btn-outline-success">Details</a>
-                  </div>
-                </div>
+            <div class="card mx-auto"> 
+                <div class="card1 p-1">
+                    <a routerLink="/details/{{item.key}}" class="card-link">
+                        <img [src]="item.value" class="mx-auto mt-3 image" alt="this is an image">
+                        <p class="overlay text-uppercase text-center fw-bold">{{item.key}}</p>  
+                   </a>
+                </div>      
             </div>
         </div>
     </div>

@@ -1,31 +1,38 @@
-.card {
-    width: 25rem;
-    height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+.card1 {
+    position: relative;
+    text-align: center;
+    display: inline-block;
 }
 
-.card-header {
-    font-size: 1.5rem;
-    background-color: #B0A6A5;
-    font-weight: bold;
-    color: whitesmoke;
+.card1 .image {
+    display: block;
+    width: 100%;
+    height: 25rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.card-img {
-    width: 21rem;
-    height: 22rem;
-    background-color: rgb(232, 226, 226);
-}
-
-.card-title {
-    color: #3a3d3b;
-}
-
-.btnDetail {
-    background-color: #E58E00; 
-    color: whitesmoke;
-} 
-
-.btnDetail > a {
-    text-decoration: none;
-    color: whitesmoke;
-}
+.card1 .overlay {
+    position: absolute; 
+    top: 30%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 25%;
+    color: #FFD700;
+    opacity: 0;
+    transition: .5s ease;
+    font-size: 3.1rem;
+    padding: 1.5rem;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+    background-color: none;
+    color: #FFD700;
+  }
