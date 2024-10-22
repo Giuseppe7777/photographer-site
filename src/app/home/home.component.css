@@ -105,17 +105,3 @@ section {
 
 
 
-/* Random text section styling */
-.random-text {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #444;
-}
-
-.random-text p {
-  font-size: 1.1em;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
