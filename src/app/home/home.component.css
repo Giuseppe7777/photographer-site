@@ -1,0 +1,121 @@
+/* Base animation styles */
+.animated-text {
+  opacity: 0;
+  transform: translateY(30px); /* Start slightly below */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-text-visible {
+  opacity: 1;
+  transform: translateY(0); /* Move to normal position */
+}
+
+/* Scale-up animation */
+.animated-scale {
+  opacity: 0;
+  transform: scale(0.9); /* Start slightly smaller */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-scale-visible {
+  opacity: 1;
+  transform: scale(1); /* Full size */
+}
+
+/* Introduction section styling */
+.introduction {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.introduction-heading {
+  font-size: 1em; 
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.introduction-large {
+  font-size: 2.5em; 
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.introduction-small {
+  font-size: 1.2em; 
+  color: #666; 
+  line-height: 1.6;
+}
+
+/* Category section styling */
+.categories {
+  margin: 50px 0;
+  text-align: center; 
+}
+
+.categories h5 {
+  margin-bottom: 50px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.category-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* Styling for additional sections */
+.additional-section {
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.additional-section h5 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.additional-section p {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* General section padding */
+section {
+  padding: 40px 20px;
+}
+
+
+
+/* Random text section styling */
+.random-text {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #444;
+}
+
+.random-text p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+

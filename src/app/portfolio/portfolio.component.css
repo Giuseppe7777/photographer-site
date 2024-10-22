@@ -1,0 +1,31 @@
+.card {
+    width: 25rem;
+    height: auto;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    background-color: #B0A6A5;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.card-img {
+    width: 21rem;
+    height: 22rem;
+    background-color: rgb(232, 226, 226);
+}
+
+.card-title {
+    color: #3a3d3b;
+}
+
+.btnDetail {
+    background-color: #E58E00; 
+    color: whitesmoke;
+} 
+
+.btnDetail > a {
+    text-decoration: none;
+    color: whitesmoke;
+}

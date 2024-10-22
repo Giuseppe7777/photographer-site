@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+/** GENERAL START **/
+/* Colors START */
+:root {
+    --primary-color-dark: #000505 ;
+    --primary-color-light: #f5f5f5 ;
+    --secondary-color-light:  #aaeff0   ;
+    --secondary-color: #00ABAD;
+    --tertiary-color-light: #ffcc80  ;
+    --tertiary-color: #ef6c00  ;
+
+    --white: #ffffff;
+    --black: #000000;
+    --grey-light: #c0c0c0;
+    --grey-mid: #808080;
+    --grey-dark: #4d4d4d;
+
+    --title-color: var(--secondary-color-light);
+    --text-color: var(--primary-color-light);
+    
+    --background-color: var(--primary-color-dark);
+
+    --navbar-bg: linear-gradient(0deg, rgba(0,5,5,0) 0%, rgba(0,5,5,1) 100%);
+
+
+}
+/* Colors END */
+
+/* Fonts START */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--title-color)
+}
+
+p,
+li,
+a {
+    color: var(--text-color);
+}
+
+/* Fonts END*/
+body {
+    background-color: var(--background-color);
+    font-family:  "Work Sans", sans-serif;
+}
+
+body div {
+    padding: 2rem;
+}
+
+
+/** GENERAL END **/
+
+/** NAVBAR START **/
+ .navbar {
+    background: var(--navbar-bg);
+ }
+
+/** NAVBAR END **/
