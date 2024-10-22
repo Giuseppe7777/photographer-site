@@ -59,7 +59,7 @@ body div:first-child {
 /** ANIMATION START **/
 .fade-in {
     opacity: 0;
-    animation: fadeIn 3s ease-in forwards;
+    animation: fadeIn 2s ease-in forwards;
 }
 
 @keyframes fadeIn {
