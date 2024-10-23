@@ -4,3 +4,7 @@ h1{
 #form{
     text-align: center;
 }
+#Message{
+    width: 25rem;
+    height: 7rem;
+}
