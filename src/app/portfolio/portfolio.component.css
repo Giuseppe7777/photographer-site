@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+::ng-deep .container-fluid div:first-child {
+  padding: 0 !important;
+}
+.container-fluid {
+  margin-inline: 2rem;
+}
+
 .card1 {
     position: relative;
     text-align: center;
     display: inline-block;
+    padding: 5rem;
 }
 
 .card1 .image {
     display: block;
-    width: 100%;
+    width: 30rem;
     height: 25rem;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    padding: 1rem;
+    object-fit: cover;
 }
 
 .card1 .overlay {
@@ -19,20 +27,38 @@
     top: 30%;
     left: 0;
     right: 0;
-    width: 80%;
+    width: 100%;
     height: 25%;
-    color: #FFD700;
+    color: var(--tertiary-color-light);
     opacity: 0;
     transition: .5s ease;
     font-size: 3.1rem;
     padding: 1.5rem;
-    font-family: "Indie Flower", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
   }
   
-  .card:hover .overlay {
+  .card1:hover .overlay {
     opacity: 1;
     background-color: none;
-    color: #FFD700;
   }
+
+  /* Mobile phone */
+@media screen and (max-width: 480px)
+ {
+  .card1 .image {
+    width: 20rem;
+    height: 20rem; 
+  }
+ }
+
+ /* Tablet */
+@media screen and (max-width: 1200px) and (min-width: 481px)
+{
+  .card1 .image {
+    width: 25rem;
+    height: 23rem; 
+  }
+}
+  

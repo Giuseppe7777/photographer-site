@@ -1,14 +1,12 @@
 <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 p-2">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         <div *ngFor="let item of array | keyvalue">
-            <div class="card mx-auto"> 
-                <div class="card1 p-1">
-                    <a routerLink="/details/{{item.key}}" class="card-link">
-                        <img [src]="item.value" class="mx-auto mt-3 image" alt="this is an image">
-                        <p class="overlay text-uppercase text-center fw-bold">{{item.key}}</p>  
-                   </a>
-                </div>      
-            </div>
+            <div class="card1 mx-auto">
+                <a routerLink="/details/{{item.key}}" class="card-link">
+                    <img [src]="item.value" class="mx-auto mt-3 image" alt="this is an image">
+                    <p class="overlay text-uppercase text-center fw-bold">{{item.key}}</p>  
+                </a>
+            </div>      
         </div>
     </div>
 </div>
