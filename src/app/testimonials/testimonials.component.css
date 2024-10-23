@@ -71,8 +71,8 @@ h1.animated-text {
 
 .prev-btn, .next-btn {
   position: absolute;
-  top: 43%;
-  transform: translateY(-43%);
+  top: 40%;
+  transform: translateY(-40%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
