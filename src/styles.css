@@ -49,8 +49,8 @@ body {
     font-family:  "Work Sans", sans-serif;
 }
 
-body div:first-child {
-    padding: 2rem;
+.app-wrapper {
+    padding: 5rem;
 }
 
 
