@@ -14,6 +14,7 @@ import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
 import { AwardsComponent } from './awards/awards.component';
 import { DetailsComponent } from './details/details.component';
+import { HeroSmallComponent } from './hero-small/hero-small.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DetailsComponent } from './details/details.component';
     BioComponent,
     ContactComponent,
     AwardsComponent,
-    DetailsComponent
+    DetailsComponent,
+    HeroSmallComponent
   ],
   imports: [
     BrowserModule,
