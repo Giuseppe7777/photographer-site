@@ -12,8 +12,8 @@ export class BioComponent implements OnInit {
     this.checkScroll(); // Check scroll position on initialization
   }
 
-  @HostListener('window:scroll', [])
-  onWindowScroll(): void {
+  @HostListener('document:wheel', [])
+  onElementScroll(): void {
     this.checkScroll(); // Trigger check on every scroll
   }
 
