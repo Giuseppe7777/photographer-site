@@ -34,10 +34,12 @@ h2 {
 
 .card1 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   right: 0;
   height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +51,7 @@ h2 {
   font-style: normal;
   text-align: center; 
   color: var(--tertiary-color-light);
-  background-color: #ffb13b8a;
+  background-color: #372b1abd;
 }
 
 .card1:hover .overlay {
