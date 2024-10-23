@@ -74,4 +74,3 @@ export class TestimonialsComponent implements AfterViewInit, OnInit {
 
 }
 
-
