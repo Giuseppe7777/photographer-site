@@ -51,6 +51,11 @@
   object-position: 50% 63%;
 }
 
+.carousel-item img.special-center-5 {
+  object-fit: cover;
+  object-position: 50% 43%;
+}
+
 .prev-btn, .next-btn {
   position: absolute;
   top: 43%;
