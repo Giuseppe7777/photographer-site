@@ -44,6 +44,6 @@
   transform: scale(1); /* Full size */
 }
 
-::ng-deep div:first-child {
+/* ::ng-deep div:first-child {
   padding: 0 !important;
-}
+} */

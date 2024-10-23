@@ -1,64 +1,91 @@
-::ng-deep .container-fluid div:first-child {
-  padding: 0 !important;
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  /* color: var(--tertiary-color-light) */
 }
-.container-fluid {
-  margin-inline: 2rem;
+
+.card {
+  background: #ffcc801c;
+  border-radius: 0;
+}
+
+.card:hover {
+  background-color: #ffcc80a8;
 }
 
 .card1 {
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    padding: 5rem;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: auto; 
+  height: 300px;
+  margin: 1rem; 
+  overflow: hidden; 
 }
 
 .card1 .image {
-    display: block;
-    width: 30rem;
-    height: 25rem;
-    background-size: cover;
-    background-position: center;
-    padding: 1rem;
-    object-fit: cover;
+  display: block;
+  width: 100%; 
+  height: 100%;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
 }
 
 .card1 .overlay {
-    position: absolute; 
-    top: 30%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 25%;
-    color: var(--tertiary-color-light);
-    opacity: 0;
-    transition: .5s ease;
-    font-size: 3.1rem;
-    padding: 1.5rem;
-    font-family: "Work Sans", sans-serif;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .card1:hover .overlay {
-    opacity: 1;
-    background-color: none;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; 
+  transition: 0.5s ease;
+  font-size: 1.5rem;
+  padding: 0.5rem; 
+  font-weight: 400;
+  font-style: normal;
+  text-align: center; 
+  color: var(--tertiary-color-light);
+  background-color: #ffb13b8a;
+}
+
+.card1:hover .overlay {
+  opacity: 1;
+}
+
+.app-wrapper {
+  padding: 5rem 8rem;
+}
 
   /* Mobile phone */
-@media screen and (max-width: 480px)
- {
-  .card1 .image {
-    width: 20rem;
-    height: 20rem; 
+  @media screen and (max-width: 480px)
+  {
+   .card1 .image {
+     width: 20rem;
+     height: 20rem; 
+   }
+   .app-wrapper {
+    padding: 5rem;
   }
- }
-
- /* Tablet */
-@media screen and (max-width: 1200px) and (min-width: 481px)
-{
-  .card1 .image {
-    width: 25rem;
-    height: 23rem; 
-  }
-}
   
+
+  }
+ 
+  /* Tablet */
+ @media screen and (max-width: 1200px) and (min-width: 481px)
+ {
+   .card1 .image {
+     width: 25rem;
+     height: 23rem; 
+   }
+
+   .app-wrapper {
+    padding: 2rem;
+  }
+  
+ }
+   
+ 

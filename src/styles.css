@@ -53,6 +53,17 @@ body {
     padding: 5rem;
 }
 
+@media screen and (max-width: 800px){
+    .app-wrapper {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .app-wrapper {
+        padding: 1rem;
+    }
+}
 
 /** GENERAL END **/
 
