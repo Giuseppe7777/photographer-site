@@ -11,3 +11,7 @@ li {
 ul.footer_links {
     padding: 0;
 }
+
+footer {
+    background: var(--footer-bg);
+}

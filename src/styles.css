@@ -18,6 +18,7 @@
     --text-color: var(--primary-color-light);
     
     --background-color: var(--primary-color-dark);
+    --footer-bg: linear-gradient(180deg, rgba(255, 255, 255, 0) , #ffcc8057 100%);
 
     --navbar-bg: linear-gradient(0deg, rgba(0,5,5,0) 0%, rgba(0,5,5,0.5) 40%, rgba(0,5,5,1) 100%);
 
