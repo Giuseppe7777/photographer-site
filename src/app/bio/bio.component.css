@@ -16,6 +16,11 @@
     background-repeat: no-repeat;
 }
 
+.bio-anchor {
+  color: var(--title-color);
+  text-decoration: none;
+}
+
 .animated-text {
   opacity: 0;
   transform: translateY(30px); /* Start slightly below */
@@ -38,4 +43,7 @@
   opacity: 1;
   transform: scale(1); /* Full size */
 }
-  
+
+::ng-deep div:first-child {
+  padding: 0 !important;
+}
