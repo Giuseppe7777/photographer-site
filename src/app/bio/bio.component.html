@@ -1,29 +1,15 @@
+<app-hero-small></app-hero-small>
 <div class="container-fluid">
-    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-3">
-        
-        <div class="col order-0 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-5 p-sm-0 animated-text animated-scale" id="bio-img">
-            <!-- <img src="images/about/about01.jpg" style="height: 85vh;" class="object-fit-contain" alt="portrait"> -->
-        </div>
-
-        <div class="col order-1 order-md-2 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3  animated-text animated-scale">
-            <nav id="bio-navbar" class="h-100 flex-column align-items-stretch">
-                <nav class="nav nav-pills flex-column">
-                    <a class="nav-link" href="#item-1">Introduction</a>
-                    <a class="nav-link" href="#item-2">Skills</a>
-                    <a class="nav-link" href="#item-3">Background</a>
-                   
-                </nav>
-            </nav>
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-5 animated-text animated-scale m-3" id="bio-img">
+            <div id="bio-img"></div>
+            <a class="bio-anchor p-1" href="/bio/#item-1">Introduction</a>
+            <a class="bio-anchor p-1" href="/bio/#item-2">Skills</a>
+            <a class="bio-anchor p-1" href="/bio/#item-3">Background</a>
         </div>
       
-        <div class="col order-2 order-md-1 col-sm-12 col-md-9 col-lg-9 col-xl-5 col-xxl-4 p-sm-0">
-            <div 
-                data-bs-spy="scroll" 
-                data-bs-target="#bio-navbar" 
-                data-bs-smooth-scroll="true" 
-                class="bio-scrollspy p-sm-0 animated-text animated-scale" 
-                tabindex="0"
-                style="overflow-y: scroll; height: 85vh;">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-7 p-3">
+            <div class="p-sm-0 animated-text animated-scale">
                 <div id="item-1">
                     <h4 class="animated-text animated-scale">Introduction</h4>
                     <p class="animated-text animated-scale">
