@@ -5,6 +5,10 @@
   overflow: hidden;
 }
 
+h1.animated-text {
+  margin-bottom: -40px;
+}
+
 .carousel-slide {
   display: flex;
   transition: transform 1s ease-in-out;
@@ -15,20 +19,29 @@
   height: 100%;
   box-sizing: border-box;
   position: relative;
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: scale(0.95); 
+  display: block;
+}
+
+.carousel-item.show {
+  opacity: 1;
+  transform: scale(1); 
 }
 
 .carousel-item img {
   display: block;
   border-radius: 10px;
   width: 100%;
-  height: 500px;
+  height: 410px;
   object-fit: cover;
   object-position: 50% 40%;
 }
 
-
 .img-responsive {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .carousel-item img.special-center-1 {
@@ -94,6 +107,7 @@
   padding: 0 !important;
 }
 
+
 /* Base animation styles */
 .animated-text {
   opacity: 0;
@@ -117,4 +131,5 @@
   opacity: 1;
   transform: scale(1); /* Full size */
 }
+
 

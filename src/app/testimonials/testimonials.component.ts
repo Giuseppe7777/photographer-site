@@ -5,6 +5,7 @@ import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
   templateUrl: './testimonials.component.html',
   styleUrls: ['./testimonials.component.css']
 })
+
 export class TestimonialsComponent implements AfterViewInit, OnInit {
 
   constructor() {}
@@ -23,7 +24,8 @@ export class TestimonialsComponent implements AfterViewInit, OnInit {
 
     
     slides.forEach((slide: any) => {
-      slide.style.display = 'none'; 
+      // slide.style.display = 'none'; 
+      slide.classList.remove('show');
     });
 
     
@@ -36,7 +38,8 @@ export class TestimonialsComponent implements AfterViewInit, OnInit {
     }
 
     
-    (slides[this.currentSlide] as HTMLElement).style.display = 'block';
+    // (slides[this.currentSlide] as HTMLElement).style.display = 'block';
+    (slides[this.currentSlide] as HTMLElement).classList.add('show');
   }
 
   
