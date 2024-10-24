@@ -69,7 +69,7 @@
    @media screen and (max-width: 480px)
    {
     .carousel-container {
-      height: 70vh;
+      height: 50vh;
       margin-top: 5rem;
       margin-inline: 5rem;
     }
@@ -79,7 +79,7 @@
   @media screen and (max-width: 1200px) and (min-width: 481px)
   {
     .carousel-container {
-      height: 110vh;
+      height: 85vh;
       margin-top: 2rem;
       margin-inline: 2rem;
     }
