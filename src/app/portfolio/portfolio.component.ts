@@ -7,6 +7,7 @@ import {product} from '../shared/products';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
+
 export class PortfolioComponent implements OnInit {
   // products: ProductModel[] = product;
 
@@ -18,9 +19,19 @@ ngOnInit(): void {
       this.array[val.categoryName] = val.img
     }
   })
-  console.log(this.array);
-  
+  this.triggerAnimations();
+}
+
+triggerAnimations(): void {
+  setTimeout(() => {
+    const animatedElements = document.querySelectorAll('.animated-text, .animated-scale');
+    animatedElements.forEach((el: Element) => {
+      el.classList.add('animated-text-visible', 'animated-scale-visible');
+    });
+  }, 100);  
 }
 
 
 }
+
+
