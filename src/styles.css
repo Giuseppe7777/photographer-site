@@ -149,3 +149,7 @@ body {
     background: var(--grey-dark);
 }
 /** SRCOLLBAR END **/
+/** HERO TEXT START **/
+.hero-text p {
+    text-transform: uppercase;
+}
