@@ -1,6 +1,7 @@
 h2 {
   text-transform: uppercase;
   margin-bottom: 2rem;
+  text-align: center;
   /* color: var(--tertiary-color-light) */
 }
 
