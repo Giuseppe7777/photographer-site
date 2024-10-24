@@ -1,18 +1,51 @@
-h2{
+
+
+/* Animation start */
+
+.animated-text {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.animated-text-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animated-scale {
+    /* opacity: 0; */
+    transform: scale(0.9);
+    transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.animated-scale-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animation end */
+
+
+/* Contact form specific styling start*/
+
+h2 {
     text-align: center;
     text-transform: uppercase;
 }
-#form{
+
+#form {
     text-align: center;
 }
-#Message{
+
+#Message {
     width: 25rem;
     height: 7rem;
     margin-bottom: 1rem;
 }
-#email{
+
+#email, #name {
     width: 25rem;
 }
-#name{
-    width: 25rem;
-}
+
+/* Contact form specific styling end */
