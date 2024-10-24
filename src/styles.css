@@ -14,6 +14,9 @@
     --grey-mid: #808080;
     --grey-dark: #4d4d4d;
 
+    --tertiary-color-hover-dark: #ffcc801c;
+    --tertiary-color-hover-dark: #ffcc80a8;
+    
     --title-color: var(--secondary-color-light);
     --text-color: var(--primary-color-light);
     
