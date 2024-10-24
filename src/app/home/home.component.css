@@ -65,40 +65,8 @@
 /* Animation end */
 
 
-/* Introduction section styling start */
-/* 
-.introduction {
-  text-align: center;
-  margin: 40px auto;
-  max-width: 800px;
-}
-
-.introduction-heading {
-  font-size: 1em; 
-  letter-spacing: 2px; 
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #777;
-  margin-bottom: 10px;
-}
-
-.introduction-large {
-  font-size: 2.5em; 
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.introduction-small {
-  font-size: 1.2em; 
-  color: #666; 
-  line-height: 1.6;
-} */
-
-/* Introduction section styling end */
-
-
 /* Category section styling start */
+
 .categories {
   margin: 10px 0 50px;
   text-align: center; 
@@ -112,23 +80,15 @@
   margin-bottom: 50px;
 }
 
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto; 
+.category-image {
+  border-radius: 5px;
 }
 
-.category-grid img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+@media (max-width: 768px) {
+  .category-image {
+    max-width: 60%; 
+  }
 }
-
-/* Category section styling end */
-
 
 /* Styling for additional sections start */
 .additional-section {

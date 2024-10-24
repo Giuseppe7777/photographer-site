@@ -11,23 +11,16 @@ export class HeroSmallComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  ngOnInit() {
-    
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.updateHeroText(event.urlAfterRedirects); 
-      }
-    });
-  }
-
-
+  
   updateHeroText(url: string) {
     if (url.includes('/home')) {
       this.heroName = 'Home';
+      
     } else if (url.includes('/portfolio')) {
       this.heroName = 'Portfolio';
     } else if (url.includes('/bio')) {
       this.heroName = 'About Me';
+
     } else if (url.includes('/contact')) {
       this.heroName = 'Contact';
     } else if (url.includes('/details')) {
@@ -35,5 +28,15 @@ export class HeroSmallComponent implements OnInit {
     } else {
       this.heroName = 'photographer out of passion';
     }
+  }
+
+  ngOnInit() {
+      
+      
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.updateHeroText(event.urlAfterRedirects); 
+      }
+    });
   }
 }
