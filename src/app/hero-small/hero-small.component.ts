@@ -11,34 +11,24 @@ export class HeroSmallComponent implements OnInit {
 
   constructor(private router: Router ,private route : ActivatedRoute) {}
 
-  
-  updateHeroText(url: string) {
-    if (url.includes('/home')) {
+
+
+  ngOnInit() {
+    let test : any = this.route.snapshot.routeConfig?.path;
+    if (test =='home') {
       this.heroName = 'Home';
       
-    } else if (url.includes('/portfolio')) {
+    } else if (test == 'portfolio') {
       this.heroName = 'Portfolio';
-    } else if (url.includes('/bio')) {
+    } else if (test == 'bio') {
       this.heroName = 'About Me';
-    } else if (url.includes('/contact')) {
+    } else if (test == 'contact') {
       this.heroName = 'Contact';
-    } else if (url.includes('/details')) {
+    } else if (test =='details') {
       this.heroName = 'Details';
     } else {
       this.heroName = 'photographer out of passion';
     }
-  }
-
-  ngOnInit() {
-      
-      
-    // this.router.events.subscribe(event => {
-    //   if (event instanceof NavigationEnd) {
-    //     this.updateHeroText(event.urlAfterRedirects); 
-    //   }
-    // });
-    console.log(this.route.snapshot.routeConfig);
-    
-     this.heroName = this.route.snapshot.routeConfig?.path
+    //  this.heroName = this.route.snapshot.routeConfig?.path
   }
 }
