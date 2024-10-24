@@ -129,6 +129,19 @@ body {
     justify-content: flex-end;
   }
 
+
+  @media screen and (max-width: 800px){
+    .nav-link:focus {
+        transition: none;
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .app-wrapper {
+        padding: 1rem;
+    }
+}
 /** NAVBAR END **/
 /** SRCOLLBAR START **/
 ::-webkit-scrollbar {
@@ -153,3 +166,4 @@ body {
 .hero-text p {
     text-transform: uppercase;
 }
+

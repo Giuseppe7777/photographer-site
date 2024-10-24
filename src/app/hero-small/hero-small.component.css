@@ -56,14 +56,15 @@
 
 @media (max-width: 800px) { 
     .hero-container {
-        height: 20vh; /*why does this not work?*/
+        height: 30vh; 
+        padding-top: 100px
     }
 }
 
 
 @media (max-width: 500px) { 
     .hero-container {
-        height: 10vh;
+        height: 20vh;
     }
 
 }

@@ -54,12 +54,13 @@
 @media (max-width: 800px) { 
     .hero-container {
         height: 40vh; 
+        padding-top: 100px
     }
 }
 
 @media (max-width: 500px) { 
     .hero-container {
-        height: 20vh; 
+        height: 30vh; 
     }
 }
 /* Media queries END */
