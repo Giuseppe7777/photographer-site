@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-hero-small',
@@ -7,9 +7,9 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./hero-small.component.css'] 
 })
 export class HeroSmallComponent implements OnInit {
-  heroName: string = ''; 
+  heroName: any = ''; 
 
-  constructor(private router: Router) {}
+  constructor(private router: Router ,private route : ActivatedRoute) {}
 
   
   updateHeroText(url: string) {
@@ -20,7 +20,6 @@ export class HeroSmallComponent implements OnInit {
       this.heroName = 'Portfolio';
     } else if (url.includes('/bio')) {
       this.heroName = 'About Me';
-
     } else if (url.includes('/contact')) {
       this.heroName = 'Contact';
     } else if (url.includes('/details')) {
@@ -33,10 +32,13 @@ export class HeroSmallComponent implements OnInit {
   ngOnInit() {
       
       
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.updateHeroText(event.urlAfterRedirects); 
-      }
-    });
+    // this.router.events.subscribe(event => {
+    //   if (event instanceof NavigationEnd) {
+    //     this.updateHeroText(event.urlAfterRedirects); 
+    //   }
+    // });
+    console.log(this.route.snapshot.routeConfig);
+    
+     this.heroName = this.route.snapshot.routeConfig?.path
   }
 }
