@@ -35,7 +35,24 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: "enabled" })],
+  imports: [RouterModule.forRoot(
+    routes, 
+    {
+      scrollPositionRestoration: "enabled",
+      anchorScrolling: "enabled"
+    }
+  )],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+
+// export class AppRoutingModule { }
+// imports: [RouterModule.forRoot(routes, { get scrollPositionRestoration() {
+//   const params = new URLSearchParams(window.location.search);
+//   console.log(params.get(""))
+//   if (params.get('portfolio') || params.get('details')) {
+//     return 'disabled' as const;
+//   }
+//   return 'enabled' as const;
+// }, })],
+// exports: [RouterModule]

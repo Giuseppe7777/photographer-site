@@ -1,12 +1,11 @@
-
-
-<div class="container-fluid app-wrapper">
+<app-hero-small></app-hero-small>
+<div class="container-fluid app-wrapper" id="category-anchor" >
     <h2 class="animated-text animated-scale">Categories</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       <div *ngFor="let item of array | keyvalue">
         <div class="card mx-auto animated-scale">
             <div class="card1">
-                <a routerLink="/details/{{ item.key }}" class="card-link">
+                <a routerLink="/details/{{ item.key }}" fragment="details-anchor" class="card-link">
                     <div class="image" style="background-image: url('{{ item.value }}');"></div>
                     <p class="overlay text-uppercase text-center fw-bold">{{ item.key }}</p>
                 </a>
