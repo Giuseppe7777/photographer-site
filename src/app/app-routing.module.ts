@@ -31,6 +31,10 @@ const routes: Routes = [
   {
     path:"details/:category", 
     component : DetailsComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/home'
   }
 ];
 
